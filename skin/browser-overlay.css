@@ -8,3 +8,6 @@
     max-width: 200px;
 }
 
+.search-go-container {
+    display: none;
+}
