@@ -4,3 +4,7 @@
   display: none;
 }
 
+#search-container {
+    max-width: 200px;
+}
+
