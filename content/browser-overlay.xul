@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://meerkat/skin/browser-overlay.css" type="text/css"?>
+<overlay id="meerkat-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="moon-console.js"/>
+  <script type="application/x-javascript" src="progress-listener.js"/>
+  <script type="application/x-javascript" src="browser-overlay.js"/>
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="meerkat-menu-button" type="menu" label="Menu">
+      <menupopup context="" onpopupshowing="return meerkat.FillMenuButton (event.target);"/>
+    </toolbarbutton>
+  </toolbarpalette>
+</overlay>

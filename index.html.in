@@ -1,0 +1,42 @@
+<html>
+<head>
+<script type="application/x-javascript">
+<!--
+function install (event) {
+    var icon_url = window.location.toString ();
+    icon_url = icon_url.substring (0, icon_url.lastIndexOf ("/") + 1);
+    icon_url += event.target.getAttribute ("icon");
+
+    var params = {
+        "Meerkat": { 
+            URL: event.target.href,
+            IconURL: icon_url,
+            Hash: event.target.getAttribute ("hash"),
+             toString: function () { return this.URL; }
+        }
+    };
+      
+    InstallTrigger.install (params);
+
+    return false;
+}
+-->
+</script>
+</head>
+<body>
+
+<h1>@DISPLAY_NAME@</h1>
+<p>@DISPLAY_DESCRIPTION@</p>
+
+<h2>Install</h2>
+
+<ul>
+<li><a href="@XPI_FILE@"
+  icon="icon.png"
+  hash="sha1:@XPI_SHA1_HASH@"
+  onclick="return install(event);">Install @DISPLAY_NAME@ (version @VERSION@)</a></li>
+</ul>
+
+</body>
+</html>
+

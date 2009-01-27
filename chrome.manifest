@@ -1,0 +1,3 @@
+content meerkat content/
+overlay chrome://browser/content/browser.xul chrome://meerkat/content/browser-overlay.xul
+skin meerkat default skin/
