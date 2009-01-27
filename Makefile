@@ -1,7 +1,7 @@
 PACKAGE = meerkat
 VERSION = 0.1
 DISPLAY_NAME = Meerkat
-DISPLAY_DESCRIPTION = Optimizes the user interface to be more suitable to Netbook devices. Hides the status bar when it\'s not relevant.
+DISPLAY_DESCRIPTION = Optimizes the user interface to be more suitable to Netbook devices.
 ID = {90203d6b-6997-4bf5-832d-e21edf2b9003}
 MIN_FIREFOX_VERSION = 3.0.0.0
 MAX_FIREFOX_VERSION = 3.1.*

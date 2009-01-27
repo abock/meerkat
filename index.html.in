@@ -26,7 +26,19 @@ function install (event) {
 <body>
 
 <h1>@DISPLAY_NAME@</h1>
-<p>@DISPLAY_DESCRIPTION@</p>
+<h4><em>@DISPLAY_DESCRIPTION@</em></h4>
+
+<p>Meerkat does the following:</p>
+
+<ul>
+  <li>Hides the status bar when there is no activity</li>
+  <li>Removes the menu bar, rebuilt into a drop down button placed on the navigation bar</li>
+  <li>Adds downloads and bookmarks buttons to the right of the location bar, followed by above mentioned menu bar button</li>
+  <li>Hides the home button and the Google search bar</li>
+  <li>Reduces the navigation bar icon size to the <em>small</em> setting</li>
+</ul>
+
+<p>Typically Meerkat delivers about 60 pixels of vertical screen realestate back to the user: valuable space for web browsing. On most Netbooks, this accounts for about 10% of the entire screen, vertically.</p>
 
 <h2>Install</h2>
 
@@ -39,7 +51,9 @@ function install (event) {
 
 <h2>Develop</h2>
 
-<pre>git clone git://github.com/abock/meerkat.git</pre>
+<ul>
+<li><pre>git clone git://github.com/abock/meerkat.git</pre></li>
+</ul>
 
 </body>
 </html>
