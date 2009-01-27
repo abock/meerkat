@@ -79,6 +79,7 @@ h1 {
   icon="icon.png"
   hash="sha1:@XPI_SHA1_HASH@"
   onclick="return install(event);">Install @DISPLAY_NAME@ (version @VERSION@)</a></li>
+<li><strong>Note:</strong> Before installing it is recommended that you reset your toolbar layout to the default layout. Go to <em>View-&gt;Toolbars-&gt;Customize</em> and then click <em>Restore Default Set</em>. This is particularly necessary if you have added or removed any elements from your menu bar. Meerkat will not work correctly if you have made changes to the menu bar.</li>
 </ul>
 
 <h2>Develop</h2>
