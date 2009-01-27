@@ -1,7 +1,6 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-#home-button,
-#search-container {
+#home-button {
   display: none;
 }
 
