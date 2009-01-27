@@ -37,6 +37,10 @@ function install (event) {
   onclick="return install(event);">Install @DISPLAY_NAME@ (version @VERSION@)</a></li>
 </ul>
 
+<h2>Develop</h2>
+
+<pre>git clone git://github.com/abock/meerkat.git</pre>
+
 </body>
 </html>
 
