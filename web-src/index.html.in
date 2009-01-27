@@ -58,7 +58,7 @@ h1 {
 </head>
 <body>
 
-<h1>@DISPLAY_NAME@</h1>
+<h1>@DISPLAY_NAME@*</h1>
 <h4><em>@DISPLAY_DESCRIPTION@</em></h4>
 
 <p>Meerkat does the following:</p>
@@ -92,6 +92,8 @@ h1 {
 <h2>Screenshot</h2>
 
 <p><a href="screenshot.png"><img style="border:none" src="screenshot-th.png" alt="Meerkat" /></a></p>
+
+<p style="padding-top: 2em; font-size: 90%">* Yes, I know the icon is a Monkey, not a Meerkat. Please mail a tango-styled Meerkat. Thanks.</p>
 
 </body>
 </html>
