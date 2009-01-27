@@ -133,7 +133,11 @@ Meerkat.prototype = {
             this.InsertAfterItem (items, "urlbar-container", "downloads-button");
             this.InsertAfterItem (items, "downloads-button", "bookmarks-button");
             if (add_menu_button) {
-                this.InsertAfterItem (items, "history-button", "meerkat-menu-button");
+                var index = items.indexOf ("meerkat-menu-button");
+                if (index >= 0) {
+                    items.splice (index, 1);
+                }
+                items.push ("meerkat-menu-button");
             }
             this.UpdateToolbar (navbar, items);
         }
