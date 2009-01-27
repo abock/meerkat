@@ -13,7 +13,7 @@ XPI_FILE = $(PACKAGE)-$(VERSION).xpi
 
 IN_FILES = \
 	install.rdf \
-	index.html
+	web-src/index.html
 
 DIST_FILES = \
 	content \
@@ -47,12 +47,12 @@ $(XPI_FILE): install.rdf
 
 xpi: $(XPI_FILE)
 
-web: clean xpi index.html
+web: clean xpi web-src/index.html web-src/*.png
 	rm -rf web
 	mkdir web
 	sed -e "s/\@XPI_SHA1_HASH\@/`sha1sum $(XPI_FILE) | awk '{print$$1}'`/g" \
-		< index.html > web/index.html
-	cp $(XPI_FILE) icon.png web
+		< web-src/index.html > web/index.html
+	cp $(XPI_FILE) web-src/*.png web
 	ssh abock@getbanshee.org rm -rf public_html/meerkat
 	scp -r web abock@getbanshee.org:public_html/meerkat
 

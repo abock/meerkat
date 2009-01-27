@@ -1,5 +1,6 @@
 <html>
 <head>
+<title>@DISPLAY_NAME@</title>
 <script type="application/x-javascript">
 <!--
 function install (event) {
@@ -22,6 +23,38 @@ function install (event) {
 }
 -->
 </script>
+<style type="text/css">
+
+body {
+	background: #111;
+	color: #f8f8f8;
+	max-width: 640px;
+	margin: 3em 3em 1em 3em;
+
+	font: 0.85em "DejaVu Sans", "Bitstream Vera Sans", Verdana, sans-serif;
+	line-height: 1.5em;
+}
+
+a {
+	color: #fc0;
+	font-weight: bold;
+}
+
+a:hover {
+	color #f60;
+}
+
+h1 {
+	background: url(icon.png) no-repeat;
+	padding-left: 58px;
+	padding-top: 12px;
+	min-height: 50px;
+	font-weight: normal;
+	font-size: 3em;
+	font-variant: small-caps;
+}
+
+</style>
 </head>
 <body>
 
@@ -53,7 +86,12 @@ function install (event) {
 
 <ul>
 <li><pre>git clone git://github.com/abock/meerkat.git</pre></li>
+<li><a href="http://github.com/abock/meerkat/tree/master">View Source (github)</a></li>
 </ul>
+
+<h2>Screenshot</h2>
+
+<p><a href="screenshot.png"><img style="border:none" src="screenshot-th.png" alt="Meerkat" /></a></p>
 
 </body>
 </html>
