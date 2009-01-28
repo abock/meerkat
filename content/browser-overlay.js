@@ -116,7 +116,10 @@ Meerkat.prototype = {
         // Only hide the menu bar if it hasn't been customized
         try {
             var menubar = document.getElementById ("toolbar-menubar");
-            if (menubar != null && menubar.currentSet == "menubar-items,spring,throbber-box") {
+            if (menubar != null && (
+                menubar.currentSet == "menubar-items" || // Firefox 3.1 Defaults
+                menubar.currentSet == "menubar-items,spring,throbber-box" // Firefox 3.0 Defaults
+                )) {
                 menubar.collapsed = true;
                 add_menu_button = true;
             }
